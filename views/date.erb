@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <h1>Today</h1>
+        <% d = DateTime.now %>
+        <% weekday = d.strftime('%A') %>
+        <% month = d.strftime('%B') %>
+        <% date = d.strftime('%e') %>
+        <% year = d.strftime('%Y') %>
+        <p><%= "The date is #{weekday}, #{month} #{date}, #{year}" %></p>
+    </body>
+</html>
